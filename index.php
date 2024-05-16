@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <?php include 'header.php'; ?>
+    <?php include 'header.html'; ?>
     
     <div class="content">
         <h2>FEEL FREE TO SELECT A SHORT STORY</h2>
@@ -35,31 +35,31 @@
                 box.addEventListener('click', function() {
                     const image = this.querySelector('img').src;
                     if (image.includes('image1.jpg')) {
-                        fetch('story1.php')
+                        fetch('story1.html')
                             .then(response => response.text())
                             .then(data => {
                                 document.querySelector('.content').innerHTML = data;
                             })
                     } else if (image.includes('image2.jpg')) {
-                        fetch('story2.php')
+                        fetch('story2.html')
                             .then(response => response.text())
                             .then(data=>{
                                 document.querySelector('.content').innerHTML = data;
                             })
                     } else if (image.includes('image3.jpg')) {
-                        fetch('story3.php')
+                        fetch('story3.html')
                             .then(response => response.text())
                             .then(data=>{
                                 document.querySelector('.content').innerHTML = data;
                             })
                     } else if (image.includes('image4.jpg')) {
-                        fetch('story4.php')
+                        fetch('story4.html')
                         .then(response => response.text())
                         .then(data=>{
                             document.querySelector('.content').innerHTML = data;
                         })
                     } else if (image.includes('image5.jpg')) {
-                        fetch('story5.php')
+                        fetch('story5.html')
                         .then(response => response.text())
                         .then(data=>{
                             document.querySelector('.content').innerHTML = data;
